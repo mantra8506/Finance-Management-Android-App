@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="investment_types">
+        <item>Fixed Deposit (FD)</item>
+        <item>Mutual Funds</item>
+        <item>Stocks</item>
+        <item>Bonds</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="categories">array.xml</string-array>
+</resources>

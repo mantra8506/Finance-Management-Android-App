@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_investments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etInvestmentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Investment Name" />
+
+    <Spinner
+        android:id="@+id/spInvestmentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/investment_types" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:hint="Amount" />
+
+    <EditText
+        android:id="@+id/etReturns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="8dp"
+        android:hint="Returns (% per annum)" />
+
+    <EditText
+        android:id="@+id/etYears"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="8dp"
+        android:hint="Investment Period (in years)" />
+
+    <Button
+        android:id="@+id/btnAddInvestment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Investment" />
+
+    <Button
+        android:id="@+id/btnCalculateInterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calculate Interest" />
+
+    <ListView
+        android:id="@+id/lvInvestments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
